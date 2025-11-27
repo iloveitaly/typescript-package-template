@@ -16,3 +16,15 @@ TEMPLATE=$(pbpaste)
 TEMPLATE=${TEMPLATE//GHUSERNAME/$GH_USERNAME}
 echo "${TEMPLATE//GHREPO/$GH_REPO}"
 ```
+
+## OIDC NPM Publishing
+
+Ex link:
+
+https://www.npmjs.com/package/analytics-plugin-rewardful/access
+
+### Publishing with Bun
+
+[It does not work with OIDC.](https://github.com/oven-sh/bun/discussions/21999)
+
+However, you can build with BUN and then publish with NPM. Note that the latest version of NPM is required as of 2025-11-27
